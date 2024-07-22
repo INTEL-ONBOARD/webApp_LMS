@@ -11,7 +11,7 @@
         <label for="simple-search" class="sr-only">Search</label>
         <div class="relative w-full">
             <!-- Removed the icon container here -->
-            <input type="text" id="simple-search" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Search branch name..." required />
+            <input type="text" id="simple-search" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Search here..." required />
         </div>
         <button type="submit" class="p-2.5 ms-2 text-sm font-medium text-blue-700 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300">
             <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -26,6 +26,6 @@
             <span class="text-gray-700">Mr.kalildasa</span>
             <span class="text-gray-500 text-sm">Employee</span>
         </div>
-        <img src="https://via.placeholder.com/40" alt="profile" class="rounded-full">
+        <img src="${pageContext.request.contextPath}/Resources/profile.png" alt="profile" class="rounded-full h-10 w-10">
     </div>
 </header>
