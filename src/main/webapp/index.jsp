@@ -19,12 +19,12 @@
 
             <form>
                 <div class="search-bar">
-                    <!-- <span class="search-icon material-symbols-outlined">search</span> -->
+                    <span class="search-icon material-symbols-outlined">search</span>
                     <input type="text" placeholder="Search here...">
                 </div>
             </form>
-            <button class="btn" type="submit" ><a href="http://localhost:8080/webApp_war/login">Login</a>
-                <span class="container-icon material-symbols-outlined">login</span>
+            <button class="btn" type="submit" style="color:text-white"><a href="http://localhost:8080/webApp_war/login">Login</a>
+                <span class=" loginbtn container-icon material-symbols-outlined">login</span>
             </button>
         </div>
     </nav>
@@ -65,39 +65,128 @@
         </div>
     </div>
 </section>
-<section class="packages">
-    <h2>Our Packages</h2>
-    <div class="package">
-        <h3>Basic Package</h3>
-        <p>For everyday laundry needs</p>
-        <ul>
-            <li>Includes wash and fold</li>
-            <li>Next-day delivery</li>
-            <li>Up to 10 lbs of laundry</li>
-        </ul>
-        <p class="price">$15</p>
-    </div>
-    <div class="package">
-        <h3>Standard Package</h3>
-        <p>For regular laundry requirements</p>
-        <ul>
-            <li>Includes wash and fold</li>
-            <li>Next-day delivery</li>
-            <li>Up to 20 lbs of laundry</li>
-        </ul>
-        <p class="price">$30</p>
-    </div>
-    <div class="package">
-        <h3>Premium Package</h3>
-        <p>For all-inclusive laundry care</p>
-        <ul>
-            <li>Includes wash, fold, and dry cleaning</li>
-            <li>Same-day delivery</li>
-            <li>Up to 30 lbs of laundry</li>
-        </ul>
-        <p class="price">$45</p>
-    </div>
-</section>
+
+    <h2 class="mb-4 text-3xl font-medium text-black-500 dark:text-black-400" style="text-align: center;"">Our Packages</h2>
+      <div class="display:flex flex flex-wrap">
+      <div class="w-full max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <h4 class="mb-4 text-2xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Standard Package</h4>
+      <div class="flex items-baseline text-gray-900 dark:text-white">
+
+      <div class="ms-1 text-xl font-normal text-gray-700 dark:text-gray-600 align-items:center" style="text-align:center;">For everyday laundry needs</div>
+      </div>
+      <ul role="list" class="space-y-5 my-7">
+      <li class="flex items-center">
+      <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+      </svg>
+      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Includes wash and fold</span>
+      </li>
+      <li class="flex">
+      <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+      </svg>
+      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Next-day delivery</span>
+      </li>
+      <li class="flex">
+      <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+      </svg>
+      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Up to 10 lbs of laundry</span>
+      </li>
+
+      <div class="text-5xl font-extrabold tracking-tight" style="text-align: center;">$15</div>
+      </div>
+
+
+      <div class="w-full max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <h4 class="mb-4 text-2xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Basic Package</h4>
+            <div class="flex items-baseline text-gray-900 dark:text-white">
+
+            <div class="ms-1 text-xl font-normal text-gray-700 dark:text-gray-600 align-items:center" style="text-align:center;">For regular laundry requirements</div>
+            </div>
+            <ul role="list" class="space-y-5 my-7">
+            <li class="flex items-center">
+            <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+            </svg>
+            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Includes wash and fold</span>
+            </li>
+            <li class="flex">
+            <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+            </svg>
+            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Next-day delivery</span>
+            </li>
+            <li class="flex">
+            <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+            </svg>
+            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Up to 20 lbs of laundry</span>
+            </li>
+
+            <div class="text-5xl font-extrabold tracking-tight" style="text-align: center;">$30</div>
+            </div>
+
+<div class="w-full max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <h4 class="mb-4 text-2xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Premium Package</h4>
+      <div class="flex items-baseline text-gray-900 dark:text-white">
+
+      <div class="ms-1 text-xl font-normal text-gray-700 dark:text-gray-600 align-items:center" style="text-align:center;">For all-inclusive laundry care</div>
+      </div>
+      <ul role="list" class="space-y-5 my-7">
+      <li class="flex items-center">
+      <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+      </svg>
+      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Includes wash, fold, and dry cleaning</span>
+      </li>
+      <li class="flex">
+      <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+      </svg>
+      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Same-day delivery</span>
+      </li>
+      <li class="flex">
+      <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+      </svg>
+      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Up to 30 lbs of laundry</span>
+      </li>
+
+      <div class="text-5xl font-extrabold tracking-tight" style="text-align: center;">$45</div>
+      </div>
+
+<div class="w-full max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <h4 class="mb-4 text-2xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Customize Package</h4>
+      <div class="flex items-baseline text-gray-900 dark:text-white">
+
+      <div class="ms-1 text-xl font-normal text-gray-700 dark:text-gray-600 align-items:center" style="text-align:center;">For all-customized laundry care</div>
+      </div>
+      <ul role="list" class="space-y-5 my-7">
+      <li class="flex items-center">
+      <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+      </svg>
+      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Includes wash, fold, and dry cleaning</span>
+      </li>
+      <li class="flex">
+      <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+      </svg>
+      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Customized-day delivery</span>
+      </li>
+      <li class="flex">
+      <svg class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+      </svg>
+      <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Up to customized lbs of laundry</span>
+      </li>
+
+      <div class="text-5xl font-extrabold tracking-tight" style="text-align: center;">$60</div>
+      </div>
+      </div>
+
+
 <footer>
     <div class="history">
         <h2>Since 1998</h2>

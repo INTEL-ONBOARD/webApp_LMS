@@ -66,8 +66,12 @@ body {
   .search-bar-icon{
     color: rgb(0,0,0,0.25);
   }
+
+  .btn{
+    color:white;
+  }
   
-  .container-fluid button {
+  .loginbtn {
     color:white;
     border-color:#673ab7;
     font-weight: bold;
@@ -141,9 +145,6 @@ body {
   
   .package {
     background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px;
     display: inline-block;
     width: 200px;
     vertical-align: top;
