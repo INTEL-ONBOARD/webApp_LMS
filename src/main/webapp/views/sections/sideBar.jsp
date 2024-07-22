@@ -1,4 +1,4 @@
-<div class="bg-gray-400 text-gray-100 w-20 lg:w-64 h-full flex flex-col justify-between lg:static absolute z-10 transform -translate-x-full lg:translate-x-0 transition-transform duration-300" id="sidebar">
+<div class="bg-gray-400 text-gray-100 w-20 lg:w-30 h-full flex flex-col justify-between lg:static absolute z-10 transform -translate-x-full lg:translate-x-0 transition-transform duration-300" id="sidebar">
     <div class="p-4">
         <h1 class="text-2xl font-bold">LMS</h1>
     </div>
