@@ -1,186 +1,169 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
-  }
-  
-  .header {
-    background-color:#673ab7;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar{
-    background-color: #673ab7;
-  }
-  
-  .navbar-expand-lg{
-    background-color:#673ab7;
-  
-  }
-  
-  .container-fluid {
-    background-color:#673ab7; 
-  }
-  
-  .container-fluid button {
-    color:white;
-    border-color:#673ab7;
-    font-weight: bold;
-    font-size: 35px;
-  }
-  
-  .lms{
-    color: white;
-   }
-  
-  .search-bar{
-    padding: 3px 150px;
-    display: flex;
-    align-items: center;
-    border-radius: 28px;
-    background: white;
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
-    min-width: 10rem;
-  }
-  
-  .search-bar input {
-    padding: 3px 150px;
-      border: none;
-      outline: none;
-      border-radius: 10px;
-      margin-left: 3px;
-      background: transparent;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  .search-bar-input::placeholder,
-  .search-bar-icon{
-    color: rgb(0,0,0,0.25);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+header {
+  background-color: #673ab7;
+  padding: 10px 20px;
+}
+
+.navbar {
+  background-color: #673ab7;
+}
+
+.lms {
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 28px;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  width: 100%;
+  background: transparent;
+}
+
+.search-bar .material-symbols-outlined {
+  color: rgb(0, 0, 0, 0.25);
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #673ab7;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .pickup-btn {
+  background-color: #ffeb3b;
+  color: #4a148c;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.ourServices, .packages {
+  padding: 50px 20px;
+}
+
+.ourServices {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-bottom: 2px solid grey;
+  padding: 10px;
+}
+
+.service .icon {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.package {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.package h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.package .description {
+  margin-bottom: 20px;
+}
+
+.package ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.package ul li {
+  margin: 5px 0;
+}
+
+.package .price {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #4a148c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .history {
+  margin-bottom: 20px;
+}
+
+footer .footer-info {
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .navbar-expand-lg .container {
+      flex-direction: column;
   }
 
-  .btn{
-    color:white;
+  .search-bar {
+      margin-left: 0;
+      margin-top: 10px;
   }
-  
-  .loginbtn {
-    color:white;
-    border-color:#673ab7;
-    font-weight: bold;
-    font-size: 35px;
-    cursor: pointer;
-  }
-  
+
   .hero {
-    background-color: #673ab7;
-    color: white;
-    text-align: center;
-    padding: 180px 20px;
-    min-height: 35rem;
+      padding: 50px 20px;
   }
-  
-  .hero .pickup-btn {
-    background-color: #ffeb3b;
-    color: #4a148c;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-  
-  .services {
-    padding: 50px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: center;
-    display:none;
-  }
-  
-  .services h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .service {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    border-bottom: 2px solid grey;
-    width: 60rem;
-  }
-  
-  .service .icon {
-    background-color: #e0e0e0;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-  }
-  
-  .service .details {
-    text-align: left;
-  }
-  
-  .packages {
-    background-color: #f5f5f5;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .packages h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .package {
-    background-color: white;
-    display: inline-block;
-    width: 200px;
-    vertical-align: top;
-  }
-  
-  .package h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .package ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .package ul li {
-    margin: 5px 0;
-  }
-  
-  .package .price {
-    font-size: 1.5em;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  footer {
-    background-color: #4a148c;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  footer .history {
-    margin-bottom: 20px;
-  }
-  
-  footer .footer-info {
-    font-size: 0.9em;
-  }
+}
