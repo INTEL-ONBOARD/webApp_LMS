@@ -34,39 +34,40 @@
     </nav>
 </header>
 <body>
-<section class="hero">
+<div class="hero">
     <h1 class="mb-4 text-3xl font-medium text-white-500 dark:text-black-400" style="text-align: center;">Experience the Best in Laundry Care</h1>
     <p>Reliable, Convenient, and Affordable Laundry Services</p>
     <button class="pickup-btn">Schedule a Pickup</button>
-</section>
+</div>
 <h2 class="mb-4 mt-4 text-3xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Our Services</h2>
+<div class="ms-1 text-xl font-normal text-gray-400 dark:text-gray-400 align-items:center" style="text-align:center;">Efficiency Meets Cleanliness-Revolutionize Your Laundry Routine with Our Comprehensive Management System!</div>
+
 <div class="ourServices display:flex flex flex-col text-align:center">
-    
     <div class="service">
         <div class="icon"></div>
         <div class="details">
-            <h3>Laundry Service</h3>
+            <h4 class="mb-4 mt-4 text-xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Laundry Service</h4>
             <p>From everyday wear to special items, our laundry service handles it all with meticulous attention to detail.</p>
         </div>
     </div>
     <div class="service">
         <div class="icon"></div>
         <div class="details">
-            <h3>Dry Cleaning</h3>
+            <h4 class="mb-4 mt-4 text-xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Dry Cleaning</h4>
             <p>Trust us with your delicate fabrics and formal wear. Our dry cleaning service ensures your clothes are cleaned and pressed to perfection.</p>
         </div>
     </div>
     <div class="service">
         <div class="icon"></div>
         <div class="details">
-            <h3>Pickup & Delivery</h3>
+            <h4 class="mb-4 mt-4 text-xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Pickup & Delivery</h4>
             <p>Enjoy the convenience of our pickup and delivery service. Schedule a time that works for you, and we'll handle the rest.</p>
         </div>
     </div>
     <div class="service">
         <div class="icon"></div>
         <div class="details">
-            <h3>Specialized Care</h3>
+            <h4 class="mb-4 mt-4 text-xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Specialized Care</h4>
             <p>Need special care for unique fabrics or items? We offer customized solutions for all your laundry needs.</p>
         </div>
     </div>
@@ -75,7 +76,7 @@
 
 <h2 class="mb-4 text-3xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Our Packages</h2>
 <div class="ms-1 text-xl font-normal text-gray-400 dark:text-gray-400 align-items:center" style="text-align:center;">Flexible Packages to Suit Every Laundry Need</div>
-<div class="grid grid-flow-row gap-20 grid-cols-2 grid-rows-2">
+<div class="grid grid-flow-row gap-7 grid-cols-2 grid-rows-2 p-20">
 
     <div class="w-full max-w-sm-20 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <h4 class="mb-4 text-2xl font-medium text-black-500 dark:text-black-400" style="text-align: center;">Basic Package</h4>
