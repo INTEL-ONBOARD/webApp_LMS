@@ -114,7 +114,17 @@
                     </div>
                     <div style="display: flex; justify-content: space-between;">
                         <button style="width: 48%; padding: 10px; border: none; border-radius: 5px; background-color: white; color: #8c14fc; cursor: pointer;">Back</button>
-                        <button style="width: 48%; padding: 10px; border: none; border-radius: 5px; background-color: white; color: #8c14fc; cursor: pointer;">Next</button>
+                        <button style="width: 48%; padding: 10px; border: none; border-radius: 5px; background-color: white; color: #8c14fc; cursor: pointer;" onclick="fourthFunction()">Next</button>
+                    </div>
+                </div>
+                <!-- 4th page -->
+                <div style="text-align: center; background-color: #9B30FF; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: Arial, sans-serif;" id="bill">
+                    <h1>Place Order?</h1>
+                    <div style="font-size: 48px; margin: 20px 0;">LKR 550.00</div>
+                    <p>Total Amount</p>
+                    <div style="display: flex; justify-content: center; gap: 20px;">
+                        <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 25px; cursor: pointer; background-color: transparent; color: white; border: 1px solid white;">Back</button>
+                        <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 25px; cursor: pointer; background-color: white; color: #9B30FF;">Done</button>
                     </div>
                 </div>
             </div>
@@ -163,15 +173,18 @@
     var one = document.getElementById("sale");
     var two = document.getElementById("pack");
     var three = document.getElementById("details");
+    var four = document.getElementById("bill");
     one.style.display = "Visible";
     two.style.display = "none";
     three.style.display = "none";
+    four.style.display = "none";
 
     function firstFunction()
     {
         one.style.display = "none";
         two.style.display = "flex";
         three.style.display = "none";
+        four.style.display = "none";
     }
 
     function secFunction()
@@ -179,6 +192,7 @@
         one.style.display = "flex";
         two.style.display = "none";
         three.style.display = "none";
+        four.style.display = "none";
     }
 
     function thirdFunction()
@@ -186,6 +200,15 @@
         one.style.display = "none";
         two.style.display = "none";
         three.style.display = "flex";
+        four.style.display = "none";
+    }
+
+    function fourthFunction()
+    {
+        one.style.display = "none";
+        two.style.display = "none";
+        three.style.display = "none";
+        four.style.display = "flex";
     }
 
 </script>
