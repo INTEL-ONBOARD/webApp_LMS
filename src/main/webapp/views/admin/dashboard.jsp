@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <!-- 3rd page -->
-                <div class="flex flex-column" style="background-color: #9d26fe; padding: 20px; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); width: auto; height: 800px;" id="details">
+                <div class="flex flex-col" style="background-color: #9d26fe; padding: 20px; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); width: auto; height: 800px;" id="details">
                     <h2 style="text-align: center;">Provide User Information</h2>
                     <div style="margin-bottom: 15px;">
                         <label for="customerName" style="display: block; margin-bottom: 5px;">Customer Name</label>
