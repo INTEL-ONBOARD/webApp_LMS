@@ -8,21 +8,21 @@
                 <li class="py-2 px-4 hover:bg-gray-700">
                     <a href="#" class="flex items-center" id="home-icon">
                         <span class="">
-                            <img src="${pageContext.request.contextPath}/Resources/home.png" class="h-6 w-6" alt="Home Icon">
+                            <img src="./Resources/home.png" class="h-6 w-6" alt="Home Icon">
                         </span>
                     </a>
                 </li>
                 <li class="py-2 px-4 hover:bg-gray-700">
                     <a href="#" class="flex items-center" id="x-icon">
                         <span class="">
-                            <img src="${pageContext.request.contextPath}/Resources/close.png" class="h-6 w-6" alt="Close Icon">
+                            <img src="./Resources/close.png" class="h-6 w-6" alt="Close Icon">
                         </span>
                     </a>
                 </li>
                 <li class="py-2 px-4 hover:bg-gray-700">
                     <a href="#" class="flex items-center" id="settings-icon">
                         <span class="">
-                            <img src="${pageContext.request.contextPath}/Resources/setting.png" class="h-6 w-6" alt="Settings Icon">
+                            <img src="./Resources/setting.png" class="h-6 w-6" alt="Settings Icon">
                         </span>
                     </a>
                 </li>
@@ -32,7 +32,7 @@
     <div class="flex justify-center py-2 px-4 hover:bg-gray-700">
         <a href="#" class="flex items-center" id="logout-icon">
             <span class="">
-                <img src="${pageContext.request.contextPath}/Resources/logout.png" class="h-6 w-6" alt="Logout Icon">
+                <img src="./Resources/logout.png" class="h-6 w-6" alt="Logout Icon">
             </span>
         </a>
     </div>
