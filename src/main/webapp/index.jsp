@@ -10,44 +10,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .service .icon {
-            width: 80px;
-            height: 60px;
-        }
-
-        .navbar {
-            background-color: #70008C;
-        }
-
-        .navbar h3 {
-            color: white;
-        }
-
-        .search-bar input {
-            width: 100%;
-        }
-
-        @media (max-width: 575.98px) {
-            .search-bar {
-                display: none;
-            }
-
-            .navbar h3 {
-                margin: 0 auto;
-            }
-        }
-
-        @media (min-width: 576px) {
-            .navbar h3 {
-                padding-left: 20px;
-            }
-        }
-    </style>
+ 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-xl navbar-dark">
+    <nav class="navbar navbar-expand-xl navbar-dark" style="background-color:#70008C">
         <div class="container-fluid">
             <h3 class="self-center text-2xl font-bold dark:text-white text-custom d-none d-sm-block">LMS</h3>
 
@@ -116,7 +83,6 @@
             </div>
         </div>
     </div>
-
 
     <h2 class="mb-4 text-3xl font-medium text-black-500 dark:text-black-400 text-center">Our Packages</h2>
 <div class="ms-1 text-lg font-normal text-gray-400 dark:text-gray-400 text-center pb-5">
