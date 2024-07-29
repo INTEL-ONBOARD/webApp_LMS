@@ -23,6 +23,7 @@
                     <span class="text-white font-bold" onclick="firstFunction()">SALE</span>
                 </div>
                 <!-- 2nd page -->
+                <form action="#" method="POST">
                 <div class="flex flex-col items-center justify-center h-full" id="pack">
                     <h2 class="text-black text-3xl mb-8">SELECT A PACKAGE</h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -72,7 +73,7 @@
                             </div>
                     </div>
                     <div class="mt-8 flex space-x-4">
-                        <button class="bg-transparent border border-white text-gray-800 py-2 px-6 rounded-full">Back</button>
+                        <button class="bg-transparent border border-white text-gray-800 py-2 px-6 rounded-full" onclick="secFunction()"">Back</button>
                         <button class="bg-white text-gray-800 py-2 px-6 rounded-full" onclick="thirdFunction()">Next</button>
                     </div>
                 </div>
@@ -108,7 +109,7 @@
                         <button id="pickupDate" class="w-full p-2 border-none rounded bg-white text-purple-600 cursor-pointer">Select Pickup Date</button>
                     </div>
                     <div class="flex justify-between">
-                        <button class="w-48 p-2 bg-white text-purple-600 rounded cursor-pointer">Back</button>
+                        <button class="w-48 p-2 bg-white text-purple-600 rounded cursor-pointer" onclick="firstFunction()">Back</button>
                         <button class="w-48 p-2 bg-white text-purple-600 rounded cursor-pointer" onclick="fourthFunction()">Next</button>
                     </div>
                 </div>
@@ -118,10 +119,11 @@
                     <div class="text-4xl mb-4">LKR 550.00</div>
                     <p class="mb-4">Total Amount</p>
                     <div class="flex justify-center gap-4">
-                        <button class="px-6 py-2 bg-transparent border border-white rounded-full">Back</button>
-                        <button class="px-6 py-2 bg-white text-purple-700 rounded-full">Done</button>
+                        <button class="px-6 py-2 bg-transparent border border-white rounded-full" onclick="thirdFunction()"">Back</button>
+                        <button class="px-6 py-2 bg-white text-purple-700 rounded-full" type="submit">Done</button>
                     </div>
                 </div>
+                </form>
             </div>
         </main>
     </div>
