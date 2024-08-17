@@ -129,6 +129,8 @@
     </div>
 </div>
 <script>
+    var SaleSection = document.getElementById()
+
     document.getElementById('hamburger-btn').addEventListener('click', function() {
         var sidebar = document.getElementById('sidebar');
         sidebar.classList.toggle('-translate-x-full');
@@ -150,6 +152,20 @@
 
     document.getElementById('settings-icon').addEventListener('click', function() {
         document.getElementById('main-content').innerHTML = '<h2 class="text-center text-2xl">Settings Tab</h2>';
+        if (window.innerWidth < 1024) {
+            document.getElementById('sidebar').classList.add('-translate-x-full');
+        }
+    });
+
+    document.getElementById('user-icon').addEventListener('click', function() {
+        document.getElementById('main-content').innerHTML = '<h2 class="text-center text-2xl">user Tab</h2>';
+        if (window.innerWidth < 1024) {
+            document.getElementById('sidebar').classList.add('-translate-x-full');
+        }
+    });
+
+    document.getElementById('stock-icon').addEventListener('click', function() {
+        document.getElementById('main-content').innerHTML = '<h2 class="text-center text-2xl">stock Tab</h2>';
         if (window.innerWidth < 1024) {
             document.getElementById('sidebar').classList.add('-translate-x-full');
         }

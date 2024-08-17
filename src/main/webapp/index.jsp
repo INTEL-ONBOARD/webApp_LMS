@@ -18,7 +18,6 @@
         <div class="container-fluid">
             <h3 class="self-center text-2xl font-bold dark:text-white text-custom d-none d-sm-block">LMS</h3>
 
-
             <div class="search-bar flex items-center max-w-sm mx-auto relative">
                 <input type="text" id="simple-search" class="bg-gray-50 text-gray-900 text-sm rounded-2xl focus:ring-blue-500 focus:border-blue-500 block ps-10 p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full" placeholder="Search here..." />
                 <div class="absolute inset-y-0 end-2 flex items-center pointer-events-none pe-3">
