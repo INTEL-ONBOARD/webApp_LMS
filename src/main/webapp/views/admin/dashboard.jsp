@@ -145,8 +145,7 @@
     });
 
     document.getElementById('home-icon').addEventListener('click', function() {
-        document.getElementById('main-content').innerHTML = '<h2 class="text-center text-2xl"></h2>';
-        if((saleSection.classList.contains("hidden") && userSection.classList.contains("hidden"))){
+        if(!(saleSection.classList.contains("hidden") && userSection.classList.contains("hidden"))){
             saleSection.classList.add("hidden");
             userSection.classList.add("hidden");
         }
