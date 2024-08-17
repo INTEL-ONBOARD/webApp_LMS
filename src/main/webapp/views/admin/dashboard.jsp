@@ -127,6 +127,11 @@
                         <button style="padding: 10px 20px; font-size: 16px; border: none; border-radius: 25px; cursor: pointer; background-color: white; color: #9B30FF;">Done</button>
                     </div>
                 </div>
+                 <!-- 5th page -->
+                 <div class="bg-purple-500 rounded-lg flex justify-center items-center w-32 h-32" id="userManagement">
+                         <span class="text-white font-bold" onclick="userManagement()">User Management</span>
+                 </div>
+
             </div>
         </main>
     </div>
@@ -158,6 +163,13 @@
         }
     });
 
+     document.getElementById('management-icon').addEventListener('click', function() {
+            document.getElementById('main-content').innerHTML = '<h2 class="text-center text-2xl">User Management Tab</h2>';
+            if (window.innerWidth < 1024) {
+                document.getElementById('sidebar').classList.add('-translate-x-full');
+            }
+        });
+
     document.getElementById('logout-icon').addEventListener('click', function() {
         if (window.innerWidth < 1024) {
             document.getElementById('sidebar').classList.add('-translate-x-full');
@@ -174,10 +186,12 @@
     var two = document.getElementById("pack");
     var three = document.getElementById("details");
     var four = document.getElementById("bill");
+    var five = document.getElementById("userManagement");
     one.style.display = "Visible";
     two.style.display = "none";
     three.style.display = "none";
     four.style.display = "none";
+    five.style.display = "none";
 
     function firstFunction()
     {
@@ -185,6 +199,7 @@
         two.style.display = "flex";
         three.style.display = "none";
         four.style.display = "none";
+        five.style.display = "none";
     }
 
     function secFunction()
@@ -193,6 +208,7 @@
         two.style.display = "none";
         three.style.display = "none";
         four.style.display = "none";
+        five.style.display = "none";
     }
 
     function thirdFunction()
@@ -201,6 +217,7 @@
         two.style.display = "none";
         three.style.display = "flex";
         four.style.display = "none";
+        five.style.display = "none";
     }
 
     function fourthFunction()
@@ -209,7 +226,17 @@
         two.style.display = "none";
         three.style.display = "none";
         four.style.display = "flex";
+        five.style.display = "none";
     }
+
+     function userManagement()
+        {
+            one.style.display = "none";
+            two.style.display = "none";
+            three.style.display = "none";
+            four.style.display = "none";
+            five.style.display = "flex";
+        }
 
 </script>
 </body>

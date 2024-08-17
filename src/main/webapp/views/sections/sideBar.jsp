@@ -26,6 +26,13 @@
                         </span>
                     </a>
                 </li>
+                <li class="py-2 px-4 hover:bg-gray-700">
+                     <a href="#" class="flex items-center" id="management-icon">
+                        <span class="">
+                            <img src="./Resources/profile.png" class="h-6 w-6" alt="Management Icon">
+                        </span>
+                     </a>
+                </li>
             </ul>
         </nav>
     </div>
