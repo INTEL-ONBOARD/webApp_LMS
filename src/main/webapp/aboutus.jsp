@@ -74,7 +74,7 @@
                           © 2024 Laundry Management Service. All rights reserved.
                       </div>
                       <div class="text-center sm:text-right">
-                          123 Laundry St, Clean City, CS 45678
+                          12 Laundry St, Clean City, CS 45678
                       </div>
                   </div>
               </div>

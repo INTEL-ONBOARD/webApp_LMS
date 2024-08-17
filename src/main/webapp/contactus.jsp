@@ -63,7 +63,7 @@
               <p class="text-gray-500 text-sm font-medium leading-5">
                 Unit building, Nimal Rd., Kiribathgoda.
               </p>
-              <p class="text-gray-500 text-sm font-medium leading-5">Contact No: +9471 453 9349</p>
+              <p class="text-gray-500 text-sm font-medium leading-5">Contact No: +9472 453 9349</p>
             </div>
 
           </address>
