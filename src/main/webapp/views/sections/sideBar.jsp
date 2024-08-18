@@ -29,7 +29,7 @@
                 <li class="py-2 px-4 hover:bg-gray-700">
                     <a href="#" class="flex items-center" id="user-icon">
                         <span class="">
-                            <img src="./Resources/management.png" class="h-6 w-6" alt="User Management Icon">
+                            <img src="./Resources/profile.png" class="h-6 w-6" alt="User Management Icon">
                         </span>
                     </a>
                 </li>
