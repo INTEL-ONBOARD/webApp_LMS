@@ -128,7 +128,7 @@
             <div class="flex justify-center items-center h-full hidden" id="users">
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                         <div class="flex items-center justify-between py-4 bg-white dark:bg-gray-900 px-4">
-                            <!-- Search input centered -->
+                            <!-- Search input centered
                             <div class="relative">
                                 <label for="table-search" class="sr-only">Search</label>
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -137,7 +137,7 @@
                                     </svg>
                                 </div>
                                 <input type="text" id="table-search-users" class="block pt-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-xl w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for users">
-                            </div>
+                            </div>  -->
                             <!-- Add User button aligned to the right -->
                             <a href="#" type="button" data-modal-target="addUserModal" data-modal-show="addUserModal" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Add User</a>
                         </div>
