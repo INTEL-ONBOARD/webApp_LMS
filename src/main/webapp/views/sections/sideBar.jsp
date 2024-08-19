@@ -44,7 +44,7 @@
         </nav>
     </div>
     <div class="flex justify-center py-2 px-4 hover:bg-gray-700">
-        <a href="#" class="flex items-center" id="logout-icon">
+        <a href="http://localhost:8080/webApp_war/" class="flex items-center" id="logout-icon">
             <span class="">
                 <img src="./Resources/logout.png" class="h-6 w-6" alt="Logout Icon">
             </span>
