@@ -17,6 +17,7 @@
     <div class="flex-1 flex flex-col">
         <jsp:include page="../sections/header.jsp" />
         <main class="p-8 flex-1" id="main-content">
+
             <div class="flex justify-center items-center h-full hidden" id="sales">
                 <!-- 1st page -->
                 <div class="bg-purple-500 rounded-lg flex justify-center items-center w-32 h-32 cursor-pointer" id="sale">
@@ -99,6 +100,7 @@
                         <div class="mb-4">
                             <label class="block text-white mb-2">Customer Type</label>
                             <div class="flex justify-between">
+                                <%--@declare id="regular"--%><%--@declare id="longtime"--%><%--@declare id="shorttime"--%>
                                 <label for="regular" class="flex-1 text-center bg-white text-purple-600 p-2 rounded cursor-pointer mx-1">Regular</label>
                                 <label for="longTime" class="flex-1 text-center bg-white text-purple-600 p-2 rounded cursor-pointer mx-1">Long time</label>
                                 <label for="shortTime" class="flex-1 text-center bg-white text-purple-600 p-2 rounded cursor-pointer mx-1">Short time</label>
@@ -480,9 +482,6 @@
 
                 </div>
 
-                </div>
-            </div>
-
             <div class="flex justify-center items-center h-full hidden" id="orders">
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <div class="flex items-center justify-center flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-white dark:bg-gray-900">
@@ -499,156 +498,157 @@
                     </div>
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" class="p-4">
-                                    <div class="flex items-center">
-                                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
-                                    </div>
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Product name
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Color
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Category
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Accessories
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Available
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Price
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Weight
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Action
-                                </th>
-                            </tr>
+                        <tr>
+                            <th scope="col" class="p-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                                </div>
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Product name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Color
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Category
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Accessories
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Available
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Price
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Weight
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Action
+                            </th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                <td class="w-4 p-4">
-                                    <div class="flex items-center">
-                                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-                                    </div>
-                                </td>
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Apple MacBook Pro 17"
-                                </th>
-                                <td class="px-6 py-4">
-                                    Silver
-                                </td>
-                                <td class="px-6 py-4">
-                                    Laptop
-                                </td>
-                                <td class="px-6 py-4">
-                                    Yes
-                                </td>
-                                <td class="px-6 py-4">
-                                    Yes
-                                </td>
-                                <td class="px-6 py-4">
-                                    $2999
-                                </td>
-                                <td class="px-6 py-4">
-                                    3.0 lb.
-                                </td>
-                                <td class="px-6 py-4">
-                                    <!-- Modal toggle -->
-                                    <a href="#" type="button" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-                                        <img src="/dev/public/resources/edit.png" alt="Edit User" class="w-6 h-6 inline-block" />
-                                    </a>
-                                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">
-                                        <img src="/dev/public/resources/remove.png" alt="Edit User" class="w-6 h-6 inline-block" />
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                <td class="w-4 p-4">
-                                    <div class="flex items-center">
-                                        <input id="checkbox-table-search-2" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="checkbox-table-search-2" class="sr-only">checkbox</label>
-                                    </div>
-                                </td>
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Microsoft Surface Pro
-                                </th>
-                                <td class="px-6 py-4">
-                                    White
-                                </td>
-                                <td class="px-6 py-4">
-                                    Laptop PC
-                                </td>
-                                <td class="px-6 py-4">
-                                    No
-                                </td>
-                                <td class="px-6 py-4">
-                                    Yes
-                                </td>
-                                <td class="px-6 py-4">
-                                    $1999
-                                </td>
-                                <td class="px-6 py-4">
-                                    1.0 lb.
-                                </td>
-                                <td class="px-6 py-4">
-                                    <!-- Modal toggle -->
-                                    <a href="#" type="button" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-                                        <img src="/dev/public/resources/edit.png" alt="Edit User" class="w-6 h-6 inline-block" />
-                                    </a>
-                                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">
-                                        <img src="/dev/public/resources/remove.png" alt="Edit User" class="w-6 h-6 inline-block" />
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                <td class="w-4 p-4">
-                                    <div class="flex items-center">
-                                        <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
-                                    </div>
-                                </td>
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    Magic Mouse 2
-                                </th>
-                                <td class="px-6 py-4">
-                                    Black
-                                </td>
-                                <td class="px-6 py-4">
-                                    Accessories
-                                </td>
-                                <td class="px-6 py-4">
-                                    Yes
-                                </td>
-                                <td class="px-6 py-4">
-                                    No
-                                </td>
-                                <td class="px-6 py-4">
-                                    $99
-                                </td>
-                                <td class="px-6 py-4">
-                                    0.2 lb.
-                                </td>
-                                <td class="px-6 py-4">
-                                    <!-- Modal toggle -->
-                                    <a href="#" type="button" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-                                        <img src="/dev/public/resources/edit.png" alt="Edit User" class="w-6 h-6 inline-block" />
-                                    </a>
-                                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">
-                                        <img src="/dev/public/resources/remove.png" alt="Edit User" class="w-6 h-6 inline-block" />
-                                    </a>
-                                </td>
-                            </tr>
-                        </div>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="w-4 p-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                                </div>
+                            </td>
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Apple MacBook Pro 17"
+                            </th>
+                            <td class="px-6 py-4">
+                                Silver
+                            </td>
+                            <td class="px-6 py-4">
+                                Laptop
+                            </td>
+                            <td class="px-6 py-4">
+                                Yes
+                            </td>
+                            <td class="px-6 py-4">
+                                Yes
+                            </td>
+                            <td class="px-6 py-4">
+                                $2999
+                            </td>
+                            <td class="px-6 py-4">
+                                3.0 lb.
+                            </td>
+                            <td class="px-6 py-4">
+                                <!-- Modal toggle -->
+                                <a href="#" type="button" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                                    <img src="/dev/public/resources/edit.png" alt="Edit User" class="w-6 h-6 inline-block" />
+                                </a>
+                                <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">
+                                    <img src="/dev/public/resources/remove.png" alt="Edit User" class="w-6 h-6 inline-block" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="w-4 p-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-table-search-2" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-table-search-2" class="sr-only">checkbox</label>
+                                </div>
+                            </td>
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Microsoft Surface Pro
+                            </th>
+                            <td class="px-6 py-4">
+                                White
+                            </td>
+                            <td class="px-6 py-4">
+                                Laptop PC
+                            </td>
+                            <td class="px-6 py-4">
+                                No
+                            </td>
+                            <td class="px-6 py-4">
+                                Yes
+                            </td>
+                            <td class="px-6 py-4">
+                                $1999
+                            </td>
+                            <td class="px-6 py-4">
+                                1.0 lb.
+                            </td>
+                            <td class="px-6 py-4">
+                                <!-- Modal toggle -->
+                                <a href="#" type="button" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                                    <img src="/dev/public/resources/edit.png" alt="Edit User" class="w-6 h-6 inline-block" />
+                                </a>
+                                <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">
+                                    <img src="/dev/public/resources/remove.png" alt="Edit User" class="w-6 h-6 inline-block" />
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="w-4 p-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
+                                </div>
+                            </td>
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Magic Mouse 2
+                            </th>
+                            <td class="px-6 py-4">
+                                Black
+                            </td>
+                            <td class="px-6 py-4">
+                                Accessories
+                            </td>
+                            <td class="px-6 py-4">
+                                Yes
+                            </td>
+                            <td class="px-6 py-4">
+                                No
+                            </td>
+                            <td class="px-6 py-4">
+                                $99
+                            </td>
+                            <td class="px-6 py-4">
+                                0.2 lb.
+                            </td>
+                            <td class="px-6 py-4">
+                                <!-- Modal toggle -->
+                                <a href="#" type="button" data-modal-show="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                                    <img src="/dev/public/resources/edit.png" alt="Edit User" class="w-6 h-6 inline-block" />
+                                </a>
+                                <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline">
+                                    <img src="/dev/public/resources/remove.png" alt="Edit User" class="w-6 h-6 inline-block" />
+                                </a>
+                            </td>
+                        </tr>
+                </div>
             </div>
+
         </main>
     </div>
 </div>
