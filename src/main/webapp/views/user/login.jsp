@@ -16,7 +16,7 @@
     </div>
 
     <div class=" flex justify-start p-3">
-        <form class="forms space-y-3" action="#" method="POST" name="loginForm">
+        <form class="forms space-y-3" action="login" method="POST" name="loginForm">
 
             <div class="email">
                 <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>

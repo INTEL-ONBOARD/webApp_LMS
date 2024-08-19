@@ -13,11 +13,16 @@ import java.io.PrintWriter;
 public class adminServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+//        resp.sendRedirect("views/index.jsp");
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter out = resp.getWriter();
         //out.println("hello");
-        System.out.println("hello");
+        System.out.println("-");
         RequestDispatcher dispatcher = req.getRequestDispatcher("/views/admin/dashboard.jsp");
         dispatcher.forward(req, resp);
-//        resp.sendRedirect("views/index.jsp");
     }
 }
