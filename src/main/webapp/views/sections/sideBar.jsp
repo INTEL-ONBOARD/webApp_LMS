@@ -12,7 +12,7 @@
                     <li id="home-btn" class="py-2 px-4 hover:bg-gray-400 rounded-lg  translate-all hover:translate-x-2 duration-200" data-tooltip-target="tltp-home" data-tooltip-placement="right">
                         <a href="#" class="flex items-center justify-center h-9" id="home-icon">
                             <span class="">
-                                <img src="./home.png" class="h-6 w-6" alt="Home Icon">
+                                <img src="src/main/webapp/Resources/home.png" class="h-6 w-6" alt="Home Icon">
                             </span>
                         </a>
                         <div id="tltp-home" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-500 text-center">

@@ -14,6 +14,7 @@
 </head>
 <body class="bg-colour-purple font-sans leading-normal tracking-normal">
 <div class="flex h-screen">
+<!--Testing-->
     <jsp:include page="../sections/sideBar.jsp" />
     <div class="flex-1 flex flex-col">
         <jsp:include page="../sections/header.jsp" />

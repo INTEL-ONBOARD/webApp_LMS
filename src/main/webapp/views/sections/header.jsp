@@ -10,7 +10,7 @@
             <form class="flex items-center max-w-sm mx-auto w-full lg:w-2/3">
                 <label for="simple-search" class="sr-only">Search</label>
                 <div class="relative w-full">
-                    <!-- Removed the icon container here -->
+                    <!-- I have Removed the icon container here -->
                     <input type="text" id="simple-search" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Search here..." required />
                 </div>
                 <button type="submit" class="p-2.5 ms-2 text-sm font-medium text-blue-700 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300">
