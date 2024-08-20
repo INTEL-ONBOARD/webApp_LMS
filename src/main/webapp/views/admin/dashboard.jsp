@@ -11,6 +11,9 @@
         .h-full { height: 100%; }
         .bg-colour-purple { background-color: white; }
     </style>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
 </head>
 <body class="bg-colour-purple font-sans leading-normal tracking-normal">
 <div class="flex h-screen">

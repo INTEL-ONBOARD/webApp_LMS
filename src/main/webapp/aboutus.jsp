@@ -56,7 +56,7 @@
           </div>
 
           <div class="lg:w-1/2 sm:w-1/2 md:w-1/2 w-auto rounded-lg overflow-hidden mt-6 sm:mt-0">
-            <img class="object-cover object-center w-full h-full" src="./Resources/wahsing-machine-image.jpg" alt="stats">
+            <img class="https://previews.123rf.com/images/barmaleeva/barmaleeva1709/barmaleeva170900022/86147376-laundry-room-with-working-washing-machine-thin-line-flat-design-vector-illustration.jpg" src="./Resources/wahsing-machine-image.jpg" alt="stats">
           </div>
           <div class="w-full sm:p-4 px-4 mb-6">
             <h1 class="title-font font-medium text-3xl mb-2 text-gray-900 text-center">Join us on our journey</h1>
